@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
+import TypeWriterComponent from "./components/typeWriter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <main className="flex min-h-screen items-center justify-around p-24">
           <Navbar />
           <div>
+            <TypeWriterComponent />
             {children}
           </div>
         </main>
