@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
     const pathname = usePathname()
     return (
-        <nav>
+        <nav className="flex-[25%]">
             <ul className="text-center">
                 <Link href="/profile">
                     <li className={`px-24 py-4 cursor-pointer hover:bg-slate-300 ${(pathname === '/' || pathname === '/profile') && ' bg-black text-white hover:bg-slate-900'}`}>
