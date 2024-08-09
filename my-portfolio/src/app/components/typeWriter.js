@@ -4,9 +4,8 @@ import Typewriter from 'typewriter-effect';
 export default function TypeWriterComponent() {
     return (
         <>
-            <h1>Pradnesh Khedekar</h1>
-            <div className='flex'>
-                <h2>I'm&nbsp;</h2>
+            <h1 className='text-3xl mb-2'>I'm Pradnesh Khedekar</h1>
+            <div className='flex text-2xl mb-4'>
                 <Typewriter
                     options={{
                         strings: ['Web Developer', 'Frontend Developer', 'React Developer', 'Angular Developer', 'Fullstack Developer', 'NodeJS Developer'],
