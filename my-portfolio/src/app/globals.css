@@ -16,6 +16,10 @@ body {
     color: white;
 }
 
+.navbar {
+    position: absolute;
+    left: 0;
+}
 .navitems {
     display: none;
 }

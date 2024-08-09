@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 export default function Profile() {
     return (
         <>
-            <div className="flex h-full flex-col items-center justify-center flex-[75%]">
+            <div className="flex h-full flex-col items-center justify-center">
                 <div className="h-[12rem] w-[12rem] rounded-full mb-8 bg-slate-400"></div>
                 <TypeWriterComponent />
                 <div className='flex gap-2 items-center'>
@@ -18,7 +18,7 @@ export default function Profile() {
                     </a>
                 </div>
             </div>
-            <div className="absolute -right-32 text-8xl -rotate-90 navbar-text tracking-widest">PROFILE</div>
+            <div className="absolute -right-44 text-8xl -rotate-90 navbar-text tracking-widest">PROFILE</div>
         </>
     );
 }
