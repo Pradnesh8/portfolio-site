@@ -18,7 +18,7 @@ export default function Profile() {
                     </a>
                 </div>
             </div>
-            <div className="fixed gradient-text text-8xl -rotate-90 navbar-text tracking-widest origin-right top-[6%] right-[6%]">PROFILE</div>
+            <div className="fixed gradient-text text-8xl -rotate-90 navbar-text tracking-widest origin-right top-[6%] right-[6%] animate-pulse">PROFILE</div>
         </>
     );
 }
