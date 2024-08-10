@@ -16,16 +16,40 @@ body {
     color: white;
 }
 
+.gradient-bg {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #434343,
+        #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #434343,
+        #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
 .navbar {
-    position: absolute;
+    position: fixed;
     left: 0;
+    top: 50%;
 }
 .navitems {
     display: none;
+    margin-top: -7rem;
 }
 .navbar:hover .navitems {
     display: block;
 }
 .navbar:hover .navbar-text {
     display: none;
+}
+
+.gradient-text {
+    background-image: linear-gradient(to bottom, #000000, #434343);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
