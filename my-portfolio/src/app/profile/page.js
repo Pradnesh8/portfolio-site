@@ -1,10 +1,13 @@
+import Image from "next/image";
 import TypeWriterComponent from "../components/typeWriter";
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 export default function Profile() {
     return (
         <>
             <div className="flex h-full flex-col items-center justify-center">
-                <div className="h-[12rem] w-[12rem] rounded-full mb-8 bg-slate-400"></div>
+                <div className="h-[12rem] w-[12rem] overflow-hidden rounded-full mb-8 z-10">
+                    <Image src={"/profile.jpeg"} alt="Profile picture" height={300} width={300} className="object-cover" />
+                </div>
                 <TypeWriterComponent />
                 <div className='flex gap-2 items-center'>
                     <a href="mailto:pradneshkhedekar08@gmail.com" target='blank' title='gmail'>
