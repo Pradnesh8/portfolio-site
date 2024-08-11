@@ -62,7 +62,7 @@ export default function Projects() {
                 {
                     projects.map((proj) =>
                     (
-                        <div key={proj.id} className="min-h-[40vh] max-w-[416px] gradient-bg rounded-lg flex flex-col gap-2 items-center p-2">
+                        <div key={proj.id} className="max-w-[416px] gradient-bg rounded-lg flex flex-col gap-2 items-center p-2">
                             <Image src={proj.imageUrl} className='rounded-lg project-image' alt={proj.name} height={300} width={400} />
                             <div className='text-xl flex justify-center items-center project-name'>
                                 <span>
