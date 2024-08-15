@@ -16,21 +16,6 @@ body {
     color: white;
 }
 
-.gradient-bg {
-    background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to left,
-        #434343,
-        #000000
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to left,
-        #434343,
-        #000000
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
-}
-
 .navbar {
     position: fixed;
     left: 0;
@@ -52,4 +37,33 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.gradient-text-mobile {
+    background-image: linear-gradient(to top, #434343, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@layer components {
+    .gradient-bg {
+        background: #000000; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+            to left,
+            #434343,
+            #000000
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+            to left,
+            #434343,
+            #000000
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+    }
+
+    .gradient-bg-mobile {
+        background: #1e293b;
+        color: white;
+    }
 }
