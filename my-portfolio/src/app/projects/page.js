@@ -59,10 +59,11 @@ export default function Projects() {
         <>
             <div className="flex min-h-screen flex-col mt-24 mb-24 items-center gap-8 justify-center flex-[75%]">
                 {/* <h1 className="text-4xl">Projects</h1> */}
+                <div className="md:hidden text-4xl font-light text-center animate-pulse navbar-text gradient-text-mobile">PROJECTS</div>
                 {
                     projects.map((proj) =>
                     (
-                        <div key={proj.id} className="max-w-[416px] gradient-bg rounded-lg flex flex-col gap-2 items-center p-2">
+                        <div key={proj.id} className="md:mx-0 md:gradient-bg max-w-[416px] gradient-bg-mobile mx-2 rounded-lg flex flex-col gap-2 items-center p-2">
                             <Image src={proj.imageUrl} className='rounded-lg project-image' alt={proj.name} height={300} width={400} />
                             <div className='text-xl flex justify-center items-center project-name'>
                                 <span>
@@ -85,7 +86,7 @@ export default function Projects() {
                 }
 
             </div>
-            <div className="fixed gradient-text text-8xl -rotate-90 navbar-text tracking-widest origin-right top-[2%] right-[6%] animate-pulse">PROJECTS</div>
+            <div className="hidden md:block fixed gradient-text text-8xl -rotate-90 navbar-text tracking-widest origin-right top-[2%] right-[6%] animate-pulse">PROJECTS</div>
         </>
     );
 }
