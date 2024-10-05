@@ -54,6 +54,20 @@ export default function Projects() {
                 "Ensured seamless adaptability across different screen sizes."
             ]
         },
+        {
+            id: 5,
+            name: "Comment System",
+            imageUrl: "/comment-system.png",
+            projectLink: "https://comment-system-all.vercel.app/",
+            description: [
+                "Google Authentication for user sign-in and commenting.",
+                "Rich text formatting(bold, italic, underline, hyperlink) and image attachments in comments.",
+                "Tagging functionality to mention users within comments.",
+                "Reactions, reply options, and sorting comments by latest or popularity.",
+                "Display profile pictures, comment timestamps, and “show more / less” for long comments.",
+                "Pagination(8 comments per page) with success, failure, and empty state messages.",
+            ]
+        },
     ]
     return (
         <>
